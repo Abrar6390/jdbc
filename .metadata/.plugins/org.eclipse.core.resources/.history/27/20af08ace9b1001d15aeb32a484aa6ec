@@ -1,0 +1,32 @@
+package com.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import javax.swing.text.html.HTMLDocument.HTMLReader.IsindexAction;
+
+public class JdbcExample11 {
+
+	public static void main(String[] args) {
+	try {
+		Class.forName("com.mysql.jdbc.Driver");
+		String url="jdbc:mysql://loclhost:3306/youtube";
+		String username="root";
+		String password="abrark4961";
+		Connection con=DriverManager.getConnection(url,username,password);
+		if(con.isClosed())
+		{
+			System.out.println("Connection is closed");
+		}
+		else
+		{
+			System.out.println("Connection created...");
+		}
+		
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
+
+	}
+
+}

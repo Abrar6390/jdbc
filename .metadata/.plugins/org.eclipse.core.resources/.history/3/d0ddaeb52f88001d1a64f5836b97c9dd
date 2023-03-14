@@ -1,0 +1,26 @@
+package com.StringBuffer;
+
+public class BufferReplace {
+
+	public static void main(String[] args) {
+		int age=100,sum=0;
+		int a=12;
+		int b=15;
+		int c=19;
+		int d=21;
+		int e=23;
+		
+		if(age<=17)
+		{
+			if(age>=18)
+			{
+			sum=sum+1;
+			System.out.println("valid age"+sum);
+			}
+			sum=sum+1;
+			System.out.println("envalid age"+sum);
+		}
+		System.out.println("default");
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.Collectio;
+
+import java.util.ArrayList;
+import java.util.ListIterator;
+
+import com.array.a;
+
+public class ListIteratorProgram {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> al=new ArrayList<>();
+		al.add(17);
+		al.add(20);
+		al.add(30);
+		System.out.println(al);
+		ListIterator<Integer> ltr=al.listIterator();
+		ListIterator itr = null;
+		while (itr.hasPrevious()) {
+			
+		}
+	}
+}

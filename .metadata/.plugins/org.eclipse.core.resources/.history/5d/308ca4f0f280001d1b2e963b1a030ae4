@@ -1,0 +1,15 @@
+package com.java;
+
+public class SubString {
+
+	public static void main(String[] args) {
+        String str="Abrar";
+        String str2="khan";
+        str="Abrar"+"khan";
+        str2=str.substring(0,str.length()-str2.length());//str2=abrar//
+        str=str.substring(str2.length());
+   System.out.println(str2);
+   System.out.println(str);
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.StringBuffer;
+
+public class BufferCapacity {
+
+	public static void main(String[] args) {
+		StringBuffer sb=new StringBuffer("khan Abrar");
+       System.out.println(sb.reverse());
+	}
+
+}

@@ -1,0 +1,29 @@
+package com.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+public class DemoJdbcExample {
+
+	public static void main(String[] args) {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/company","root","abrark4961");
+			//String q="insert into employee(ID,EMPLOYEE_NAME) value (?,?)";
+			String p="select * from employee";
+			PreparedStatement pstmt=con.prepareStatement(p);
+			//pstmt.setString(1, "abrar");
+			//pstmt.setString(2, "Mumbai");
+			pstmt.executeQuery();
+            System.out.println("inserted...");
+            con.close();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			
+		}
+
+	}
+	
+}

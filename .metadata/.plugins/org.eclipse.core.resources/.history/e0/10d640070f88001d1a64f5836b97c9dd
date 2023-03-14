@@ -1,0 +1,10 @@
+package com.StringBuffer;
+
+public class StringBufferAppendMethhod {
+
+	public static void main(String[] args) {
+		StringBuffer sb=new StringBuffer("Abrar khan");
+        System.out.println(sb.append(".java"));
+	}
+
+}

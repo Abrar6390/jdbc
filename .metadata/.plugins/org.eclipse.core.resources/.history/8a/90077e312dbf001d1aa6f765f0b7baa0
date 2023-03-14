@@ -1,0 +1,19 @@
+package com.jdbc.test.sahil;
+interface I
+{
+	private void name() {
+		System.out.println("byy");
+	}
+}
+class A implements I
+{
+	void name()
+	{
+		System.out.println("hiiii");
+	}
+	public static void main(String[] args) {
+		I a=new A();
+		
+	}
+
+}

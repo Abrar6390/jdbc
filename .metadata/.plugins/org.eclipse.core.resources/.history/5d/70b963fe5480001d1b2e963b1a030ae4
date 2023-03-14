@@ -1,0 +1,15 @@
+package com.java;
+
+import java.security.PKCS12Attribute;
+
+public class IgnoreCase {
+
+	public static void main(String[] args) {
+		String s="Sunday";
+		String s2="monday";
+		System.out.println(s.substring(3));
+		System.out.print(s2.substring(3));
+		
+	}
+
+}

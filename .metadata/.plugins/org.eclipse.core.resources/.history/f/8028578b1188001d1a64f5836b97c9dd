@@ -1,0 +1,13 @@
+package com.StringBuffer;
+
+public class BufferReplace {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringBuffer sb=new StringBuffer("Khan Abrar");
+		sb.replace(0, 10,"Ahmad");
+		System.out.println(sb);
+
+	}
+
+}

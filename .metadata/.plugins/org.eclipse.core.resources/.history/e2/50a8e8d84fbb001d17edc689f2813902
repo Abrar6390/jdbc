@@ -1,0 +1,30 @@
+package com.jdbc;
+
+public class overloading {
+	int a;
+	double b;
+	String c;
+	 overloading(){
+		a=100;
+		b=44.44;
+		c="khan";
+		
+	}
+	 overloading(double y,String z)
+	 {
+		 b=y;
+		 c=z;
+	 }
+}
+class B{
+	public static void main(String[]args) {
+	 overloading r=new  overloading();
+	 overloading r2=new  overloading();
+	 overloading r3=new  overloading(33.21,"ilyas");
+	 int b;
+	String a;
+	System.out.println(a+" "+b+" "+c);
+	 System.out.println(a+" "+b+" ");
+	 System.out.println(a+" ");
+	}
+}

@@ -1,0 +1,12 @@
+package com.Collection;
+
+public class LinkedListProgram {
+
+	public static void main(String[] args) {
+		LinkedList ll=new LinkedList();
+		 ll.add(123);
+
+	}
+	}
+
+

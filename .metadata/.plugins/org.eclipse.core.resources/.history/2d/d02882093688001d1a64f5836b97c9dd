@@ -1,0 +1,11 @@
+package com.StringBuffer;
+
+public class BufferCharat {
+       public static void main(String[] args) {
+		StringBuffer sb=new StringBuffer("Ahmad khan");
+
+		{
+	    System.out.println(sb.substring(0, 2));
+       }
+       }
+}

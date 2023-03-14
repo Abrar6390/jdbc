@@ -1,0 +1,9 @@
+package com.StringBuffer;
+
+public class BufferCharat {
+       public static void main(String[] args) {
+		StringBuffer sb=new StringBuffer("Ahmad");
+	    sb.charAt(2);
+	    System.out.println(sb);
+       }
+}

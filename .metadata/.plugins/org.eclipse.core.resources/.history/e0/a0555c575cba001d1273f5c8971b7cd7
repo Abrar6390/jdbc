@@ -1,0 +1,27 @@
+package com.jdbc.test.sahil;
+class Abrar{
+	void show(int a)
+	{
+		System.out.println("hellow abrar");
+	}
+	void show(int b,String b1)
+	{
+		System.out.println("hellow Iliyas");
+	}	
+}
+public class PolymorphismExample extends Abrar {
+	
+	void show(int a)
+	{
+		System.out.println("PolymorphismExample");
+	}
+	void show(int b,String b1)
+	{
+		System.out.println("PolymorphismExample......");
+	}
+	public static void main(String[] args) {
+		PolymorphismExample ss=new PolymorphismExample();	
+        ss.show(22,"kkk");
+	}
+
+}

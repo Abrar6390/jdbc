@@ -1,0 +1,61 @@
+package com.jdbc;
+
+import java.io.*;
+import java.io.InputStreamReader;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+public class JdbcDeleteQuery {
+
+	public static void main(String[] args) {
+		PreparedStatement pstmt=null;
+		BufferedReader	 br=new BufferedReader(new InputStreamReader(System.in));
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			 String url = "jdbc:mysql://localhost:3306/centre?useSSL=false";
+			 String username = "root";
+			 String password = "abrark4961";
+			 Connection con=DriverManager.getConnection(url,username,password);
+			 System.out.println("entre the emp_name/emp_gender/emp_age");
+			 String choose=br.readLine();
+			 
+			/* if (choose.equalsIgnoreCase("id")) {
+				String q="delete from employee where id=?";
+				 pstmt=con.prepareStatement(q);
+				 System.out.println("entre id...");
+				int id=br.readLine();
+				pstmt.setInt(1,id);
+				pstmt.executeUpdate();
+				System.out.println("successfully delete ID"+choose+"id");*/
+			 
+				 if (choose.equalsIgnoreCase("emp_name")) {
+                 String q1="delete from employee where emp_name=?";
+                 pstmt=con.prepareStatement(q1);
+                 System.out.println("entre emp_name");
+                 String emp_name=br.readLine();
+                 pstmt.setString(1,emp_name);
+                 System.out.println("successfully delete emp_name"+choose+"emp_name");
+				}
+				else if (choose.equalsIgnoreCase("emp_gender")) {
+                String q2="delete from employee where emp_gender=?";
+                pstmt=con.prepareStatement(q2);
+               String emp_gender=br.readLine();
+               pstmt.setString(1,emp_gender);
+                System.out.println("successfully delete emp_gender"+choose);
+				}
+				else if (choose.equalsIgnoreCase("emp_age")) {
+					String q3="delete from employee where emp_age=?";
+					 pstmt=con.prepareStatement(q3);
+		                String emp_age=br.readLine();
+		                pstmt.setString(1,emp_age);
+		                System.out.println("successfully deleted emp_age"+choose+"emp_age");
+				}
+				con.close();
+		} catch (Exception e) {
+		e.printStackTrace();	
+		}
+    
+	}
+
+}

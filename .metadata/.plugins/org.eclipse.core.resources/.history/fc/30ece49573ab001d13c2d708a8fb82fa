@@ -1,0 +1,40 @@
+package com.java;
+
+public class ArmstrongNumber {
+
+	public static void main(String[] args) {
+		int no=407;
+		int no1=371;
+		int rem;
+		int rem1;
+		int p=0;
+		int p1=0;
+		int temp=no;
+		int temp1=no1;
+		while(no>0)
+			while(no>0)
+		{
+			rem=no%10;
+			p=p+(rem*rem*rem);
+			no=no/10;
+			if(no<0)
+			{
+			rem=no1%10;
+			p=p+(rem*rem*rem);
+			no1=no1/10;
+			}
+			
+		}
+		
+		if(temp==p)
+		{
+			System.out.println(no+"no is armstrong number");
+			System.out.println(no1+"no1 is armstrong number");
+			
+		}
+		else {
+			System.out.println("not a Armstrong number");
+		}
+	}
+
+}

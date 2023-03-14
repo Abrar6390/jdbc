@@ -1,0 +1,27 @@
+package com.java;
+
+public class SubString {
+
+	public static void main(String[] args) {
+     /*   String str="Abrar";
+        String str2="khan";
+        str="Abrar"+"khan";
+        str2=str.substring(0,str.length()-str2.length());//str2=abrar//
+        str=str.substring(str2.length());
+   System.out.println(str2);
+   System.out.println(str);
+	}
+*/
+		String s="javatpoint";
+		String s2="html";
+		String s3="javaScript";
+		s=s+s2+s3;
+		s2=s.substring(0,s.length()-s2.length()+s3.length());//s2=javatpoint
+		s=s+s3;
+		s3=s.substring(0,s.length()-s2.length());
+		s=s.substring(s3.length());
+		System.out.println(s);
+		System.out.println(s2);
+		System.out.println(s3);
+}
+}

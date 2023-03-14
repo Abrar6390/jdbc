@@ -1,0 +1,21 @@
+package com.jdbc.test.sahil;
+
+public class PolymorphismExample {
+	void show()
+	{
+		System.out.println("hello Iliyas");
+	}
+	void show(int a)
+	{
+		System.out.println("hello Iliyas");
+	}
+	void show(int b,String b1)
+	{
+		System.out.println("hello Iliyas");
+	}
+	public static void main(String[] args) {
+		PolymorphismExample ss=new PolymorphismExample ();	
+        ss.show();
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.java;
+
+public class ArmstrongNumber {
+
+	public static void main(String[] args) {
+		int no=153;
+		int sum=0;
+		int p=0;
+		int temp=0;
+		while(no>0)
+		{
+			sum=no%10;
+			temp=(sum*sum*sum)+p;
+			no=no/10;
+		}
+		if(temp==no)
+		{
+			System.out.println("no is armstrong number");
+		}
+		else {
+			System.out.println("not a Armstrong number");
+		}
+	}
+
+}

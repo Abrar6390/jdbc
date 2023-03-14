@@ -1,0 +1,19 @@
+interface I
+{
+   private static void h() {
+		System.out.println("byy");
+	}
+}
+class A  
+{
+	void name()
+	{
+		System.out.println("hiiii");
+	}
+	public static void main(String[] args) {
+		A a=new A();
+		a.name();
+		
+	}
+
+}

@@ -1,0 +1,38 @@
+package com.array;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class SetExample {
+
+	public static void main(String[] args) {
+		Set<String> m=new HashSet<>();
+		m.add("Abrar");
+		m.add("Salman");
+		m.add("Obaid");
+		Set<String>dSet=new HashSet<>(m);
+		
+		dSet.add("Muzammil");
+		Iterator<String> iterator = dSet.iterator();
+		while (iterator.hasNext()) {
+			String string = (String) iterator.next();
+			System.out.println(string);
+			if (iterator==m) {
+				System.out.println(iterator.equals(dSet));
+				int temp=0;
+				for (int i = 0; i < args.length; i++) {
+					temp=i;
+					
+					System.out.println(temp);	
+					}
+					
+				}
+				
+			}
+			
+		}
+
+	}
+
+}

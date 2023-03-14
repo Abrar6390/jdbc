@@ -1,0 +1,22 @@
+package com.jdbc.test.sahil;
+
+public class PolymorphismExample {
+	int show()
+	{
+		System.out.println("hlo");
+		return 0;
+	}
+	void show(int a)
+	{
+		System.out.println("hellow abrar");
+	}
+	void show(int b,String b1)
+	{
+		System.out.println(b+"  "+b1);
+	}
+	public static void main(String[] args) {
+		PolymorphismExample ss=new PolymorphismExample();	
+        ss.show(22,"kkk");
+	}
+
+}

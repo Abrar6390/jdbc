@@ -1,0 +1,12 @@
+package com.jdbc.test.sahil;
+
+public class PolymorphismExample {
+	int a=10;
+	
+	public static void main(String[] args) {
+		
+		PolymorphismExample a=new PolymorphismExample();
+		
+		System.out.println(a.a);
+	}
+}
